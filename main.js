@@ -2,6 +2,8 @@
 // @name        WaniKani Exact Review Time
 // @namespace   goldenchrysus.wanikani.exactreviewtime
 // @description Shows actual time of next review
+// @author      GoldenChrysus
+// @website     https://github.com/GoldenChrysus
 // @version     1.1.1
 // @include     https://www.wanikani.com/dashboard*
 // @require     https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js
