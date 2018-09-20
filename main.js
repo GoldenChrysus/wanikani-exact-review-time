@@ -4,8 +4,9 @@
 // @description Shows actual time of next review
 // @author      GoldenChrysus
 // @website     https://github.com/GoldenChrysus
-// @version     1.1.1
+// @version     1.1.2
 // @include     https://www.wanikani.com/dashboard*
+// @include     https://www.wanikani.com/
 // @require     https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js
 // @copyright   2018+, Patrick Golden
 // @license     MIT; http://opensource.org/licenses/MIT
@@ -25,6 +26,11 @@
 	let wkof              = window.wkof || {};
 	let modules           = "Menu, Settings";
 	let settings_modal    = false;
+	
+	// Don't run if time isn't found; probably on home page rather than dashboard
+	if (!$time.length) {
+		return;
+	}
 
 	// Only initialize WaniKani Open Framework if the user has it installed and available
 	if (window.wkof) {
