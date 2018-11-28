@@ -4,7 +4,7 @@
 // @description Shows actual time of next review
 // @author      GoldenChrysus
 // @website     https://github.com/GoldenChrysus
-// @version     1.1.2
+// @version     1.1.3
 // @include     https://www.wanikani.com/dashboard*
 // @include     https://www.wanikani.com/
 // @require     https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js
@@ -19,7 +19,7 @@
 
 	// Establish important variables
 	let key               = "goldenchrysus_wanikani_exactreviewtime";
-	let $time             = $(".timeago");
+	let $time             = $(".review-status .timeago");
 	let observer          = new window.MutationObserver(updateReviewBlock);
 	let timeout_available = false;
 	let timeout_countdown = false;
